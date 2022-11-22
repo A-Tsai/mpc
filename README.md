@@ -8,6 +8,8 @@
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
 - GG20 [[paper](https://eprint.iacr.org/2020/540.pdf), [code from Coinbase](https://github.com/coinbase/kryptology)]
 - GG21 [[paper](https://eprint.iacr.org/2021/060.pdf), code]
+  ![Performance Comparison](/img/gg21_fig1.png)
+
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
     - Preliminaries
