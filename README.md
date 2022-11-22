@@ -13,7 +13,7 @@
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
   
-  [![Technical Overview](https://img.youtube.com/vi/zXCSPWxWA-s/maxresdefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
+  [![Technical Overview (Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/mqdefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
   
   - Preliminaries
     - Proactive Key Refresh
@@ -47,6 +47,8 @@
   - based on GG18
   - implmeneted by Rust
   
+---
+
 ## Tutorial
 
 ### Basic Concept
@@ -124,4 +126,11 @@ Ref: [NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57
 
 *refer to [video](https://www.youtube.com/watch?v=FshMisRD2Uo&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=86)
 
+---
+
 ## Reference
+
+- [MPC Alliance](https://www.mpcalliance.org/)
+- [CoinMarketCap](https://coinmarketcap.com/)
+- [智富區塊 Smart Rich](https://smartrichs.com/)
+- [區塊客](https://blockcast.it/)
