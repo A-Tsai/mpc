@@ -13,13 +13,14 @@
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
   
-  [![Technical Overview (Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/mqdefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
+  [![Technical Overview (Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/sddefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
+  *Technical Overview (Must Read)*
   
   - Preliminaries
     - Proactive Key Refresh
     - Universally Composable (UC) Security Framework
       - [[2000 Universally Composable Security: A New Paradigm for Cryptographic Protocols]](https://eprint.iacr.org/2000/067.pdf)
-    - Paillier Encryption
+    - leveraging [Paillier Encryption (from wikipedia)](https://en.wikipedia.org/wiki/Paillier_cryptosystem) as a commitment scheme
     - Pedersen Commitments
 
 ### Other Important Papers
@@ -54,10 +55,15 @@
 ### Basic Concept
 
 - [[2021 iThome 鐵人賽]學密碼學也猜不到你的手機密碼](https://ithelp.ithome.com.tw/users/20140112/ironman/3930)
+  - RC4, DES, AES and RSA
+  - [ECC (Elliptic Curve Cryptography;橢圓曲線密碼學)](https://ithelp.ithome.com.tw/articles/10268495)
+  - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
+  - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
+  - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
 
 ### Elliptic Curve Cryptography (ECC)
 
-- [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介](https://www.youtube.com/watch?v=3FUyGjH_FZ0&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=3)
+- [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教授)](https://www.youtube.com/watch?v=3FUyGjH_FZ0&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=3)
 - [[Video] Elliptic Curve Cryptography Overview](https://www.youtube.com/watch?v=dCvB-mhkT0w)
 - [[Video] Elliptic Curves - Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE)
 
@@ -118,6 +124,7 @@ Ref: [NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57
 
 ![addition](/img/ecc_addition.png)
 ![addition1](/img/ecc_addition1.png)
+Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教授)](https://www.youtube.com/watch?v=3FUyGjH_FZ0&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=3)
 
 ### Q2: How is Bitcoin Public key converted to address?
 
