@@ -12,6 +12,9 @@
 
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
+  
+  [![Technical Overview](https://img.youtube.com/vi/zXCSPWxWA-s/maxresdefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
+  
   - Preliminaries
     - Proactive Key Refresh
     - Universally Composable (UC) Security Framework
