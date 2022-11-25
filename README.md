@@ -19,9 +19,9 @@
   - Preliminaries
     - Proactive Key Refresh
     - Universally Composable (UC) Security Framework
-      - [[2000 Universally Composable Security: A New Paradigm for Cryptographic Protocols]](https://eprint.iacr.org/2000/067.pdf)
     - leveraging [Paillier Encryption (from wikipedia)](https://en.wikipedia.org/wiki/Paillier_cryptosystem) as a commitment scheme
     - Pedersen Commitments
+    - DDH
 
 ### Other Important Papers
 
@@ -52,7 +52,7 @@
 
 ## Tutorial
 
-### Basic Concept
+### Basic Concept of Cryptography
 
 - [[2021 iThome 鐵人賽]學密碼學也猜不到你的手機密碼](https://ithelp.ithome.com.tw/users/20140112/ironman/3930)
   - RC4, DES, AES and RSA
@@ -60,6 +60,8 @@
   - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
   - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
   - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
+-[[MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
+-[[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
 
 ### Elliptic Curve Cryptography (ECC)
 
@@ -100,6 +102,23 @@
   - [Wiki](https://wiki.mpcalliance.org/)
   - [Learn (Books, Articles, Videos)](https://www.mpcalliance.org/learn)
 
+### Zero Knowledge Proof
+
+<<TODO: add more resource on this topic>>
+
+### Universally Composable (UC) Security Framework
+
+#### Publication
+
+- [[2000 Universally Composable Security: A New Paradigm for Cryptographic Protocols]](https://eprint.iacr.org/2000/067.pdf)
+- [[2019] ILC: A Calculus for Composable, Computational Cryptography](https://eprint.iacr.org/2019/402.pdf)
+- [[2019] iUC: Flexible Universal Composability Made Simple](https://eprint.iacr.org/2019/1073.pdf)
+
+#### Tutorials
+
+- [[Course] Universally Composable Security: A Tutorial (by Prof. Ran Canetti in 2016)](https://www.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE)
+- [[Video] PriSC'20 - Universal Composability is Secure Compilation](https://www.youtube.com/watch?v=rpZTL9fxwfw)
+
 ### Threshold Signatures Scheme (TSS)
 
 - [[Video] MultiParty Computation Introduction to Threshold Signatures in 9 Minutes](https://www.youtube.com/watch?v=4DFfZovCBB0)
@@ -114,6 +133,64 @@
   - Distributed Key Generation (DKG)
     - Pedersen's DKG
     - Joint-Pedersen's DKG
+
+## Definition
+
+### EdDSA (愛德華茲曲線數字簽名算法）
+
+- SA，DSA，ECDSA，EdDSA和Ed25519都用於數字簽名，但只有RSA也可以用於加密。[(ref)](https://www.cnblogs.com/librarookie/p/15389876.html)
+  - RSA（Rivest–Shamir–Adleman）是最早的公鑰密碼系統之一，被廣泛用於安全數據傳輸。它的安全性取決於整數分解，因此永遠不需要安全的RNG（隨機數生成器）。與DSA相比，RSA的簽名驗證速度更快，但生成速度較慢。
+  - DSA（數字簽名算法）是用於數字簽名的聯邦信息處理標準。它的安全性取決於離散的對數問題。與RSA相比，DSA的簽名生成速度更快，但驗證速度較慢。如果使用錯誤的數字生成器，可能會破壞安全性。
+  - ECDSA（橢圓曲線數字簽名算法）是DSA（數字簽名算法）的橢圓曲線實現。橢圓曲線密碼術能夠以較小的密鑰提供與RSA相對相同的安全級別。它還具有DSA對不良RNG敏感的缺點。
+  - EdDSA（愛德華茲曲線數字簽名算法）是一種使用基於扭曲愛德華茲曲線的Schnorr簽名變體的數字簽名方案。簽名創建在EdDSA中是確定性的，其安全性是基於某些離散對數問題的難處理性，因此它比DSA和ECDSA更安全，後者要求每個簽名都具有高質量的隨機性。
+- Ed25519是EdDSA簽名方案，但使用SHA-512 / 256和Curve25519；它是一條安全的橢圓形曲線，比DSA，ECDSA和EdDSA 提供更好的安全性，並且具有更好的性能。
+  - spec256r1、spec256k1、ed25519都是簽名算法，而且是具體數字算法的實現。[(ref)](https://blog.csdn.net/feeltouch/article/details/126070640)
+  - spec256k1、spec256r1都屬於橢圓曲線數字簽名算法ECDSA(Elliptic Curve Digital Signature Algorithm)簽名的具體實現，只是橢圓曲線函數不同。是由NIST(National Institute of Standards and Technology)這個組織確定的。
+  - ed25519屬於EdDSA (Edwards-curve Digital Signature Algorithm) 簽名算法的具體實現，是由ANFS組織推進的ed25519密鑰體系相關進展。
+
+### Paillier Encryption
+
+- [Paillier_cryptosystem](https://en.wikipedia.org/wiki/Paillier_cryptosystem)
+  - Choose two large prime numbers `p` and `q` randomly, `gcd(pq,(p-1)(q-1))=1`
+  - Compute `n = pq` and $\lambda$`=lcm(p-1,q-1)`
+- Encryption
+  - Let `m` be a message to be encrypted where `0<= m<n`
+  - Select random `r` where `0<r<n`
+  - Compute ciphertext as: c = g^m.r^n mod n^2
+- Homomorphic properties[[ref]](https://en.wikipedia.org/wiki/Paillier_cryptosystem#Homomorphic_properties)
+  - A notable feature of the Paillier cryptosystem is its homomorphic properties along with its non-deterministic encryption (see Electronic voting in Applications for usage). As the encryption function is additively homomorphic, the following identities can be described :
+    - Homomorphic addition of plaintexts
+    - Homomorphic multiplication of plaintexts
+
+### Decisional Diffie–Hellman (DDH)
+
+- [Diffie-Hellman 金鑰交換 讀書筆記](https://medium.com/@asdfg55887/diffie-hellman-key-exchange-protocol-3e04df91b1c)
+- [[Course]The Decisional Diffie-Hellman (DDH) problem](https://www.youtube.com/watch?v=RPO53voYY5k&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=181)
+  - [[Video]Hardness of DDH implies DH key-exchange is Secure](https://www.youtube.com/watch?v=nhp846HDEh8&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=199)
+- [[Paper]The Decision Diffie-Hellman Problem](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf)
+- [Cyclic Group(循環群)](https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E7%BE%A4)
+
+### Bitcoin Improvement Proposal (BIP)
+
+- [BIPs](https://github.com/bitcoin/bips)
+- [Ethereum Improvement Proposal (EIP)](https://github.com/ethereum/EIPs)
+- [[2021 iThome 鐵人賽]DAY 28- BIP32- HD wallet](https://ithelp.ithome.com.tw/articles/10279944)
+  - Hierarchical Deterministic Wallets
+- [HD Wallet 技術細節](https://medium.com/@bun919tw/hd-wallet-970096a6d72f)
+
+### Unspent Transaction Output (UTXO)
+
+- [從比特幣上的一筆交易來看 UTXO 架構 【Day 4】](https://ithelp.ithome.com.tw/articles/10217556)
+  - [e.g. An example from Blockstream Explorer](https://blockstream.info/block/0000000000000000000779afcfa50c15cad7916880c2c698a61dfaf4ba0ae33f)
+  - [The Ethereum Blockchain Explorer](https://etherscan.io/)
+- [什麼是UTXO?](https://medium.com/%E4%B8%80%E5%80%8B%E5%AE%B9%E6%98%93%E5%81%A5%E5%BF%98%E7%9A%84%E5%A4%A7%E5%AD%B8%E7%94%9F/%E4%BB%80%E9%BA%BC%E6%98%AFutxo-40b62e73c84d)
+  - UTXO (Bitcoin 採用）與 帳戶餘額模型(Account；Ethereum 採用) 優劣比較：
+    - UTXO 可簽發多筆交易，並廣播到區塊鏈網路
+    - 帳戶餘額模型易理解且容易編寫程式；而UTXO要考慮到輸入與輸出之間的關係，在程式上比較難編寫
+    - 帳戶餘額模型的每一筆交易都只需要一個簽名，而輸入與輸出都是地址，能節省儲存空間。
+    - UTXO只要驗證當前的交易是符合輸出與輸入規則，不用去追朔先前交易；而帳戶餘額模型只要金額有問題必須追朔先前交易的金流動向。
+    - Account模型需要有更多的機制去保護資金；而UTXO對於雙花攻擊(Double Spending)與重放攻擊(Replay Attack)有先天的保護
+
 
 ## Questions
 
@@ -135,9 +212,19 @@ Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教�
 
 ---
 
+## Services
+
+- [The Bitcoin Blockstream Explorer](https://blockstream.info)
+- [The Ethereum Blockchain Explorer](https://etherscan.io/)
+- [Bitcoint Improvement Proposal (BIP)](https://github.com/bitcoin/bips)
+- [Ethereum Improvement Proposal (EIP)](https://github.com/ethereum/EIPs)
+
+---
+
 ## Reference
 
 - [MPC Alliance](https://www.mpcalliance.org/)
 - [CoinMarketCap](https://coinmarketcap.com/)
 - [智富區塊 Smart Rich](https://smartrichs.com/)
 - [區塊客](https://blockcast.it/)
+- [幣學](https://glossary.bshare.io/)
