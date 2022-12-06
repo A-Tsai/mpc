@@ -54,15 +54,27 @@
 
 ### Basic Concept of Cryptography
 
+- 4 Characteristics of Cryptography
+  - 機密性（Confidentiality）：確保資料只會給對方看到
+  - 完整性（Integrity）：確保資料的完整性
+  - 身份驗證（Authentication）：傳送和接收都需要驗證
+  - 不可否認性（Non-Reputation）：提供雙方互動的證明
+- Kerckhoffs’ principle
+  - 古典密碼學和現代密碼學最大的區別就是在有柯克霍夫原則後才開始有了變化，柯克霍夫原則（Kerckhoffs’ principle），大致上就是在強調即使密碼系統的任何細節被人知道了，只要密鑰（key）未洩漏，它也是安全的。換句話說，加密技術就算演算法被知道了，資料也不會有危險。
 - [[2021 iThome 鐵人賽]學密碼學也猜不到你的手機密碼](https://ithelp.ithome.com.tw/users/20140112/ironman/3930)
   - RC4, DES, AES and RSA
   - [ECC (Elliptic Curve Cryptography;橢圓曲線密碼學)](https://ithelp.ithome.com.tw/articles/10268495)
+    - [Day 24. 非對稱式加密演算法 - 橢圓曲線密碼學 Elliptic Curve Cryptography , ECC (觀念篇)](https://ithelp.ithome.com.tw/articles/10251031)
   - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
   - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
   - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
 -[[MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
 -[[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
-
+-[Day 21. 加密演算法要注意的那些毛 (一) - 加密模式](https://ithelp.ithome.com.tw/articles/10249953)
+  - ECB, CBC[區塊鏈(blockchain)的鼻祖], CFB, OFB, CTR
+  - [AES, Advanced Encryption Standard，其實是一套標準：FIPS 197，而我們所說的AES演算法 就是Rijndael演算法](https://ithelp.ithome.com.tw/articles/10249488) 
+  - [RSA 流程推導與實例說明](RSA 簡介)
+  
 ### Elliptic Curve Cryptography (ECC)
 
 - [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教授)](https://www.youtube.com/watch?v=3FUyGjH_FZ0&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=3)
@@ -176,7 +188,9 @@
 - [Ethereum Improvement Proposal (EIP)](https://github.com/ethereum/EIPs)
 - [[2021 iThome 鐵人賽]DAY 28- BIP32- HD wallet](https://ithelp.ithome.com.tw/articles/10279944)
   - Hierarchical Deterministic Wallets
-- [HD Wallet 技術細節](https://medium.com/@bun919tw/hd-wallet-970096a6d72f)
+  - [HD Wallet 技術細節](https://medium.com/@bun919tw/hd-wallet-970096a6d72f)
+    - HMAC-SHA256
+  - [python-bip32](https://github.com/darosior/python-bip32)
 
 ### Unspent Transaction Output (UTXO)
 
@@ -191,6 +205,23 @@
     - UTXO只要驗證當前的交易是符合輸出與輸入規則，不用去追朔先前交易；而帳戶餘額模型只要金額有問題必須追朔先前交易的金流動向。
     - Account模型需要有更多的機制去保護資金；而UTXO對於雙花攻擊(Double Spending)與重放攻擊(Replay Attack)有先天的保護
 
+### [Public Key Cryptography Standards (PKCS)](https://en.wikipedia.org/wiki/PKCS)
+
+- These are a group of public-key cryptography standards devised and published by RSA Security LLC, starting in the early 1990s. 
+- The company published the standards to promote the use of the cryptography techniques to which they had patents, such as the RSA algorithm, the Schnorr signature algorithm and several others.
+  - PKCS#1 : RSA Cryptography Standard
+  - PKCS#3 : [Diffie-Hellman Key Agreement Standard(D-H)](https://zh.wikipedia.org/wiki/%E8%BF%AA%E8%8F%B2-%E8%B5%AB%E7%88%BE%E6%9B%BC%E5%AF%86%E9%91%B0%E4%BA%A4%E6%8F%9B)
+    - Diffie–Hellman–Merkle key exchange
+
+### [Elliptic Curve Diffie–Hellman key exchange (ECDH）](https://zh.wikipedia.org/wiki/%E6%A9%A2%E5%9C%93%E6%9B%B2%E7%B7%9A%E8%BF%AA%E8%8F%B2-%E8%B5%AB%E7%88%BE%E6%9B%BC%E9%87%91%E9%91%B0%E4%BA%A4%E6%8F%9B)
+- 橢圓曲線迪菲-赫爾曼密鑰交換，是一種匿名的密鑰合意協議（Key-agreement protocol），這是迪菲－赫爾曼密鑰交換的變種，採用橢圓曲線密碼學來加強性能與安全性。
+- 在這個協定下，雙方利用由橢圓曲線密碼學建立的公鑰與私鑰對，在一個不安全的通道中，建立起安全的共有加密資料。
+- 臨時ECDH（ECDH Ephemeral，ECDHE）能夠提供前向安全性。
+
+### [Forward Secrecy(FS) or Perfect Forward Secrecy (PFS)](https://zh.wikipedia.org/wiki/%E5%89%8D%E5%90%91%E4%BF%9D%E5%AF%86)
+- 前向保密（Forward Secrecy）有時也被稱為完全前向保密（Perfect Forward Secrecy，是密碼學中通訊協定的一種安全特性，指的是長期使用的主金鑰泄漏不會導致過去的對談金鑰泄漏。
+- 前向保密能夠保護過去進行的通訊不受密碼或金鑰在未來暴露的威脅。
+- 如果系統具有前向保密性，就可以保證在私鑰泄露時歷史通訊的安全，即使系統遭到主動攻擊也是如此。
 
 ## Questions
 
