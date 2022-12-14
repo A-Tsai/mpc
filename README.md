@@ -68,6 +68,19 @@
   - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
   - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
   - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
+- [[YouTube] NCSSM's Cryptography](https://www.youtube.com/playlist?list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro)
+  - Ciphers
+    - Transposition Ciphers: Reverse, Rail Fence, Route
+    - Substitution Ciphers: Atbash, Caesar, multiplicative, Tabula Recta, Trithemius,  Vigenere, Autokey, **Affine, Hill, Playfair**
+  - [Index of Coincidence](https://www.youtube.com/watch?v=kty-dCB4AAk&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=22)
+  - [Kasiski Test](https://www.youtube.com/watch?v=asRbswE2hFY&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=23)
+  - [Linear Feedback Shift Register (LFSR)](https://www.youtube.com/watch?v=Y0DlCM4iKeA&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=29)
+  - [Diffie-Hellman Key Exchange Problem](https://youtu.be/NHCsgISM6BY?t=318)
+  - [The Extended Euclidean Algorithm (EEA)](https://www.youtube.com/watch?v=WKSlsFTH8hs&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=33)
+  - [Euler's Totient Function $\Phi(n)$ ](https://www.youtube.com/watch?v=CTbdowq0ZB8&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=34)
+    - if `p` is prime, then: $\Phi(p) = p -1$.
+    - if `p` and `q` are both primes, and `n = pq`, then: $\Phi(n)=\Phi(pq)=\Phi(p)*\Phi(q)=(p-1)(q-1)$
+-[[Video]RSA 歷史原由與設計說明](https://www.youtube.com/watch?v=wXB-V_Keiu8)
 -[[MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
 -[[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
 -[Day 21. 加密演算法要注意的那些毛 (一) - 加密模式](https://ithelp.ithome.com.tw/articles/10249953)
@@ -129,7 +142,9 @@
 #### Tutorials
 
 - [[Course] Universally Composable Security: A Tutorial (by Prof. Ran Canetti in 2016)](https://www.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE)
+  - 
 - [[Video] PriSC'20 - Universal Composability is Secure Compilation](https://www.youtube.com/watch?v=rpZTL9fxwfw)
+- [[Video] A Framework for Universally Composable Diffie-Hellman Key Exchange](https://www.youtube.com/watch?v=hxNYnaJQsyM)
 
 ### Threshold Signatures Scheme (TSS)
 
@@ -175,9 +190,11 @@
     - Homomorphic multiplication of plaintexts
 
 ### Decisional Diffie–Hellman (DDH)
-
+- [Lesson 30 The Key Exchange Problem](https://youtu.be/NHCsgISM6BY?t=318)
 - [Diffie-Hellman 金鑰交換 讀書筆記](https://medium.com/@asdfg55887/diffie-hellman-key-exchange-protocol-3e04df91b1c)
 - [[Course]The Decisional Diffie-Hellman (DDH) problem](https://www.youtube.com/watch?v=RPO53voYY5k&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=181)
+  - [[Video]Diffie Hellman Key Exchange Algorithm | Diffie Hellman key exchange algorithm example and solution](https://www.youtube.com/watch?v=J_EhWSB1wgc)
+    - Provide a good example to demo the key exchange process
   - [[Video]Hardness of DDH implies DH key-exchange is Secure](https://www.youtube.com/watch?v=nhp846HDEh8&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=199)
 - [[Paper]The Decision Diffie-Hellman Problem](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf)
 - [Cyclic Group(循環群)](https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E7%BE%A4)
@@ -192,6 +209,16 @@
     - HMAC-SHA256
   - [python-bip32](https://github.com/darosior/python-bip32)
 
+### ERC-20 / ERC721
+- [ERC-20 代幣簡介](https://academy.binance.com/zt/articles/an-introduction-to-erc-20-tokens)
+  - 在以太坊中，ERC 指的是以太坊評論請求。這些皆為概述以太坊程式化標準的技術文件。請勿與以太坊改進提案 (EIP) 混淆，這就像是比特幣的 BIP，可針對協定本身提出改善方案。另外，ERC 旨在建立可讓應用程式與合約輕鬆互動的慣例。
+  - 穩定幣（與法幣掛鉤的代幣）通常會採用 ERC-20 代幣標準。其中一項範例就是稍早引用的 BUSD 合約交易，且大多數主流穩定幣也有提供此格式。
+  - 若要遵循 ERC-20，則您的合約必須包含六項強制函數：totalSupply、balanceOf、transfer、transferFrom、approve 及 allowance。此外，您還可以指定 name、symbol 及 decimal 等可選函數。
+- [以太坊系列標準介紹(ERC20/ERC721)](https://medium.com/@starbit.writer/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%B3%BB%E5%88%97%E6%A8%99%E6%BA%96%E4%BB%8B%E7%B4%B9-erc20-erc721-4a5a83009d00)
+  - ERC（Ethereum Request for Comment）並非一項技術或是程式，而是以太坊通用徵求意見協議（RFC）。
+  - ERC為開發者提供了建設技術指導。而開發者可以通過提交EIP（Ethereum Improvement Proposal），向以太坊社區提交新的ERC標準提案。
+  - 提交內容包括協議規範和合約標準。一旦該EIP獲得以太坊委員會的批准並最終定型，它就會成為一個新的ERC。
+  
 ### Unspent Transaction Output (UTXO)
 
 - [從比特幣上的一筆交易來看 UTXO 架構 【Day 4】](https://ithelp.ithome.com.tw/articles/10217556)
@@ -259,3 +286,6 @@ Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教�
 - [智富區塊 Smart Rich](https://smartrichs.com/)
 - [區塊客](https://blockcast.it/)
 - [幣學](https://glossary.bshare.io/)
+- [BitNodes](https://bitnodes.io/)
+  - [Live-Map](https://bitnodes.io/nodes/live-map/)
+- 
