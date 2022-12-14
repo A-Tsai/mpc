@@ -54,13 +54,15 @@
 
 ### Basic Concept of Cryptography
 
-- 4 Characteristics of Cryptography
+- **4 Characteristics of Cryptography**
   - 機密性（Confidentiality）：確保資料只會給對方看到
   - 完整性（Integrity）：確保資料的完整性
   - 身份驗證（Authentication）：傳送和接收都需要驗證
   - 不可否認性（Non-Reputation）：提供雙方互動的證明
-- Kerckhoffs’ principle
+
+- **柯克霍夫原則 (Kerckhoffs’ principle)**
   - 古典密碼學和現代密碼學最大的區別就是在有柯克霍夫原則後才開始有了變化，柯克霍夫原則（Kerckhoffs’ principle），大致上就是在強調即使密碼系統的任何細節被人知道了，只要密鑰（key）未洩漏，它也是安全的。換句話說，加密技術就算演算法被知道了，資料也不會有危險。
+
 - [[2021 iThome 鐵人賽]學密碼學也猜不到你的手機密碼](https://ithelp.ithome.com.tw/users/20140112/ironman/3930)
   - RC4, DES, AES and RSA
   - [ECC (Elliptic Curve Cryptography;橢圓曲線密碼學)](https://ithelp.ithome.com.tw/articles/10268495)
@@ -68,10 +70,11 @@
   - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
   - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
   - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
-- [[YouTube] NCSSM's Cryptography](https://www.youtube.com/playlist?list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro)
+
+- [[Video] NCSSM's Cryptography Course](https://www.youtube.com/playlist?list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro)
   - Ciphers
     - Transposition Ciphers: Reverse, Rail Fence, Route
-    - Substitution Ciphers: Atbash, Caesar, multiplicative, Tabula Recta, Trithemius,  Vigenere, Autokey, **Affine, Hill, Playfair**
+    - Substitution Ciphers: Atbash, Caesar, multiplicative, Tabula Recta, Trithemius,  Vigenere, Autokey, <del>Affine, Hill, Playfair</del>
   - [Index of Coincidence](https://www.youtube.com/watch?v=kty-dCB4AAk&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=22)
   - [Kasiski Test](https://www.youtube.com/watch?v=asRbswE2hFY&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=23)
   - [Linear Feedback Shift Register (LFSR)](https://www.youtube.com/watch?v=Y0DlCM4iKeA&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=29)
@@ -80,8 +83,11 @@
   - [Euler's Totient Function $\Phi(n)$ ](https://www.youtube.com/watch?v=CTbdowq0ZB8&list=PLE6ty64ouo1MYLUgQxDJ6Ruic_ghtUsro&index=34)
     - if `p` is prime, then: $\Phi(p) = p -1$.
     - if `p` and `q` are both primes, and `n = pq`, then: $\Phi(n)=\Phi(pq)=\Phi(p)*\Phi(q)=(p-1)(q-1)$
+
 -[[Video]RSA 歷史原由與設計說明](https://www.youtube.com/watch?v=wXB-V_Keiu8)
+
 -[[MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
+
 -[[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
 -[Day 21. 加密演算法要注意的那些毛 (一) - 加密模式](https://ithelp.ithome.com.tw/articles/10249953)
   - ECB, CBC[區塊鏈(blockchain)的鼻祖], CFB, OFB, CTR
