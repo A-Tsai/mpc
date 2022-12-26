@@ -154,6 +154,7 @@
     - [Steganography](https://www.youtube.com/watch?v=Te8Cao2Smsk&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=26)
     - [Euler's Totient Function](https://www.youtube.com/watch?v=osge0_lZTaY&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=39)
       - [解法說明](https://www.youtube.com/watch?v=osge0_lZTaY&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=39)
+![addition](/img/euler.png)  
     - [Fermat's Little Theorem](https://www.youtube.com/watch?v=3Cb0ys-jppU&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=40)
     - [Euler's Theorem](https://www.youtube.com/watch?v=DyOv20d4c70&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=41)
     - [Primitive root](https://www.youtube.com/watch?v=DKy98FWHwdg&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=42)

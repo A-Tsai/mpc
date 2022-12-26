@@ -35,7 +35,6 @@
 #### Tutorials
 
 - [[Course] Universally Composable Security: A Tutorial (by Prof. Ran Canetti in 2016)](https://www.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE)
-  - 
 - [[Video] PriSC'20 - Universal Composability is Secure Compilation](https://www.youtube.com/watch?v=rpZTL9fxwfw)
 - [[Video] A Framework for Universally Composable Diffie-Hellman Key Exchange](https://www.youtube.com/watch?v=hxNYnaJQsyM)
 
