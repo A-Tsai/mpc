@@ -7,6 +7,7 @@
 - GG18 [[paper](https://eprint.iacr.org/2019/114.pdf), [code from Binance](https://github.com/bnb-chain/tss-lib)]
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
 - GG20 [[paper](https://eprint.iacr.org/2020/540.pdf), [code from Coinbase](https://github.com/coinbase/kryptology)]
+  - ##TODO##
 - GG21 [[paper](https://eprint.iacr.org/2021/060.pdf), code]
   ![Performance Comparison](/img/gg21_fig1.png)
 
@@ -23,7 +24,7 @@
     - Pedersen Commitments
     - DDH
 
-### Other Important Papers
+### Other Publications
 
 - [2022 Better than Advertised Security for Non-interactive Threshold Signatures](https://crypto.iacr.org/2022/papers/538806_1_En_18_Chapter_OnlinePDF.pdf)
   - [Source Code(Python)](https://github.com/mmaller/multi_and_threshold_signature_reductions)
@@ -38,6 +39,8 @@
   - [[Video] MPTS 2020 Talk 3a2: Securing DNSSEC Keys via Threshold ECDSA From Generic MPC](https://csrc.nist.gov/presentations/2020/mpts2020-3a2)
   - [[Slide]](https://csrc.nist.gov/CSRC/media//Events/mpts2020/slides/mpts2020-3a2-talk-kris.pdf)
 
+---
+
 ## Resources
 
 - [[Github] Multi-party ECDSA](https://github.com/ZenGo-X/multi-party-ecdsa)
@@ -50,7 +53,7 @@
   
 ---
 
-## Tutorial
+## Supplementaries
 
 - [Basic Concept of Cryptography](basic.md)
 - [Advanced Concept of Cryptograph](advanced.md)
@@ -78,21 +81,6 @@
 
 ---
 
-## Services
-
-- [The Bitcoin Blockstream Explorer](https://blockstream.info)
-- [The Ethereum Blockchain Explorer](https://etherscan.io/)
-- [Bitcoint Improvement Proposal (BIP)](https://github.com/bitcoin/bips)
-- [Ethereum Improvement Proposal (EIP)](https://github.com/ethereum/EIPs)
-
----
-
 ## Reference
 
 - [MPC Alliance](https://www.mpcalliance.org/)
-- [CoinMarketCap](https://coinmarketcap.com/)
-- [智富區塊 Smart Rich](https://smartrichs.com/)
-- [區塊客](https://blockcast.it/)
-- [幣學](https://glossary.bshare.io/)
-- [BitNodes](https://bitnodes.io/)
-  - [Live-Map](https://bitnodes.io/nodes/live-map/)
