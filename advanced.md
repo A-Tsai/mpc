@@ -46,6 +46,14 @@
 - [[Video] PriSC'20 - Universal Composability is Secure Compilation](https://www.youtube.com/watch?v=rpZTL9fxwfw)
 - [[Video] A Framework for Universally Composable Diffie-Hellman Key Exchange](https://www.youtube.com/watch?v=hxNYnaJQsyM)
 
+### Multi-Signature (MultiSeq)
+
+- [什麼是多重簽名錢包？](https://academy.binance.com/zt/articles/what-is-a-multisig-wallet)
+- [MultiSig vs. ThresholdSig](https://sepior.com/blog/2019/4/4/are-threshold-signatures-really-more-secure-thannbspmultisignbsp)
+  - Since Bitcoin uses fixed length blocks, MultiSig transactions limit the number of transactions per block, so miners charge higher fees and perhaps more importantly may deprioritize processing MultiSig transactions during peak traffic periods.
+- [(Video)Introduction to Threshold Signatures in 9 Minutes](https://www.youtube.com/watch?v=4DFfZovCBB0)
+![multisig_thresholdsig](/img/multisig_thresholdsig.png)
+
 ### Threshold Signatures Scheme (TSS)
 
 - [[Video] MultiParty Computation Introduction to Threshold Signatures in 9 Minutes](https://www.youtube.com/watch?v=4DFfZovCBB0)
