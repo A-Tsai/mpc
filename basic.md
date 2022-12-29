@@ -41,14 +41,26 @@
 
 ### Decisional Diffie–Hellman (DDH)
 
-- [Lesson 30 The Key Exchange Problem](https://youtu.be/NHCsgISM6BY?t=318)
 - [Diffie-Hellman 金鑰交換 讀書筆記](https://medium.com/@asdfg55887/diffie-hellman-key-exchange-protocol-3e04df91b1c)
-- [[Course]The Decisional Diffie-Hellman (DDH) problem](https://www.youtube.com/watch?v=RPO53voYY5k&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=181)
+  - [Lesson 30 The Key Exchange Problem](https://youtu.be/NHCsgISM6BY?t=318)
   - [[Video]Diffie Hellman Key Exchange Algorithm | Diffie Hellman key exchange algorithm example and solution](https://www.youtube.com/watch?v=J_EhWSB1wgc)
     - Provide a good example to demo the key exchange process
+- [[Course]The Decisional Diffie-Hellman (DDH) problem](https://www.youtube.com/watch?v=RPO53voYY5k&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=181)
   - [[Video]Hardness of DDH implies DH key-exchange is Secure](https://www.youtube.com/watch?v=nhp846HDEh8&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=199)
 - [[Paper]The Decision Diffie-Hellman Problem](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf)
 - [Cyclic Group(循環群)](https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E7%BE%A4)
+
+### [Shamir’s Secret Sharing (SSS)](https://medium.com/taipei-ethereum-meetup/%E7%A7%81%E9%91%B0%E5%88%86%E5%89%B2-shamirs-secret-sharing-7a70c8abf664)
+
+- [Wiki](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
+- [Golang implmentation](https://github.com/corvus-ch/shamir)
+- [Ruby Example](https://kimh.github.io/blog/en/security/protect-your-secret-key-with-shamirs-secret-sharing/)
+- [ZeroPass](https://zeropass.io/)
+  - [ZeroPass Whitepaper](https://zeropass.gitbook.io/whitepaper/)
+
+### Semantic Security
+
+對於相同的明文稱作 x，則今天用同態加密方法 En去加密他，也就是得到 En(x)。對同樣的 x 和相同的 En計算 En(x) 100 次，你會發現這一百次出來的結果都不一樣。但是呢，你將這一百個值做解密，會發現給出的答案都是 10。( for 同態加密(homomorphic encryption))
 
 ### Bitcoin Improvement Proposal (BIP)
 
@@ -86,7 +98,7 @@
 
 ### [Public Key Cryptography Standards (PKCS)](https://en.wikipedia.org/wiki/PKCS)
 
-- These are a group of public-key cryptography standards devised and published by RSA Security LLC, starting in the early 1990s. 
+- These are a group of public-key cryptography standards devised and published by RSA Security LLC, starting in the early 1990s.
 - The company published the standards to promote the use of the cryptography techniques to which they had patents, such as the RSA algorithm, the Schnorr signature algorithm and several others.
   - PKCS#1 : RSA Cryptography Standard
   - PKCS#3 : [Diffie-Hellman Key Agreement Standard(D-H)](https://zh.wikipedia.org/wiki/%E8%BF%AA%E8%8F%B2-%E8%B5%AB%E7%88%BE%E6%9B%BC%E5%AF%86%E9%91%B0%E4%BA%A4%E6%8F%9B)
@@ -165,20 +177,17 @@
       - Miller-Rabin Primality Test
     - [Abelian Group](https://www.youtube.com/watch?v=8TjYHK804mU&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=54)
     - **TODO: subcribe the channel for chapter 3/4**
+
+- [[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
+
 - [[Video]RSA 歷史原由與設計說明](https://www.youtube.com/watch?v=wXB-V_Keiu8)
 
 - [[華人開放式課程 MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
 
-- [[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
-
 - [Day 21. 加密演算法要注意的那些毛 (一) - 加密模式](https://ithelp.ithome.com.tw/articles/10249953)
   - ECB, CBC[區塊鏈(blockchain)的鼻祖], CFB, OFB, CTR
-  - [AES, Advanced Encryption Standard，其實是一套標準：FIPS 197，而我們所說的AES演算法 就是Rijndael演算法](https://ithelp.ithome.com.tw/articles/10249488) 
+  - [AES, Advanced Encryption Standard，其實是一套標準：FIPS 197，而我們所說的AES演算法 就是Rijndael演算法](https://ithelp.ithome.com.tw/articles/10249488)
   - [RSA 流程推導與實例說明](RSA 簡介)
-
-- [Bitcoin 論文中文詳細解說](https://www.youtube.com/watch?v=Sfdv_Day2Do)
-  - [[Paper]Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
-  - Merkle Tree
 
 ---
 
@@ -200,4 +209,3 @@ Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教�
 
 - refer to [video](https://www.youtube.com/watch?v=FshMisRD2Uo&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=86)
 - Bitcoin 採用 [Secp256k1](https://en.bitcoin.it/wiki/Secp256k1)
-

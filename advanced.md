@@ -20,10 +20,18 @@
 - [[Video] Introduction to Homomorphic Encryption (by Pascal Paillier)](https://www.youtube.com/watch?v=umqz7kKWxyw)
   - Fully Homomorphic Encryption (FHE)
 
-### Zero Knowledge Proof
+### Zero Knowledge Proofs (ZKPs)
 
-<<TODO: add more resource on this topic>>
+- 中文說明
+  - [Day15|密碼學初探(8)：零知識證明](https://ithelp.ithome.com.tw/articles/10215110)
+  - [a16z：零知識證明的進步映射去中心化的速度](https://zombit.info/a16z-advances-in-zero-knowledge-proofs/)
 
+### [Verifiable Secret Sharing (VSS)](https://en.wikipedia.org/wiki/Verifiable_secret_sharing)
+
+- Feldman's VSS
+  - based on Shamir's secret sharing scheme combined with any homomorphic encryption scheme. 
+  - [A tour of Verifiable Secret Sharing schemes and Distributed Key Generation protocols.](https://medium.com/nethermind-eth/a-tour-of-verifiable-secret-sharing-schemes-and-distributed-key-generation-protocols-3c814e0d47e1)
+  
 ### Universally Composable (UC) Security Framework
 
 #### Publication
