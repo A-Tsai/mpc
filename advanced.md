@@ -8,7 +8,7 @@
 - [[Video] Elliptic Curve Cryptography Overview](https://www.youtube.com/watch?v=dCvB-mhkT0w)
 - [[Video] Elliptic Curves - Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE)
 
-### Homomorphic Eencryption (同態加密)
+### Homomorphic Encryption (同態加密)
 
 在加密空間做計算，回傳後再解密可以得到相同的答案
 
@@ -68,6 +68,10 @@
   - Distributed Key Generation (DKG)
     - Pedersen's DKG
     - Joint-Pedersen's DKG
+
+### Theshold Schnorr Signature
+
+`<TBD>`
 
 ### InterPlanetary File System (IPFS)
 

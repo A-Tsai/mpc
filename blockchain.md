@@ -17,6 +17,13 @@
 
 ---
 
+## Definition
+
+- FUD : Fear、Uncertainty、Doubt，翻譯成中文的意思即為「恐懼、疑惑、懷疑」，「D」也可以替換成 Disinformation，也就是所謂的假消息，而 FUD 的意思也很好理解，指得是「競爭對手試圖散播不正確的謠言來打擊對手的行為」，FUD 也可以泛指「各類的假消息」。
+- DAO ： Distributed Autonomous Organization，中文翻譯成「分散式自治組織」。DAO包括四類群體：平台創立者、管理者、承包人、投資人（代幣持有者）。
+
+---
+
 ## Reference
 
 - [MPC Alliance](https://www.mpcalliance.org/)

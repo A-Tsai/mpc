@@ -45,6 +45,9 @@
   - [Lesson 30 The Key Exchange Problem](https://youtu.be/NHCsgISM6BY?t=318)
   - [[Video]Diffie Hellman Key Exchange Algorithm | Diffie Hellman key exchange algorithm example and solution](https://www.youtube.com/watch?v=J_EhWSB1wgc)
     - Provide a good example to demo the key exchange process
+  - [[Video]DHKE : Demo with mixing colors - part 1/2](https://www.youtube.com/watch?v=4svwEYsO77U&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7)
+    - Provide good examples(color and math) to describe DHKE
+  - [Man in the middle attack in Diffie Hellman Key Exchange](https://www.youtube.com/watch?v=ev2Cbu23m-Q)
 - [[Course]The Decisional Diffie-Hellman (DDH) problem](https://www.youtube.com/watch?v=RPO53voYY5k&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=181)
   - [[Video]Hardness of DDH implies DH key-exchange is Secure](https://www.youtube.com/watch?v=nhp846HDEh8&list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6&index=199)
 - [[Paper]The Decision Diffie-Hellman Problem](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf)
