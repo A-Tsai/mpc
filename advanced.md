@@ -19,15 +19,31 @@
   - Paillier Encryption：Select Random 0 < r < N with gcd(r,N)=1
 - [[Video] Introduction to Homomorphic Encryption (by Pascal Paillier)](https://www.youtube.com/watch?v=umqz7kKWxyw)
   - Fully Homomorphic Encryption (FHE)
+- [[Video] Intro to HE from Microsoft Research](https://www.youtube.com/watch?v=SEBdYXxijSo&list=RDLVSEBdYXxijSo&start_radio=1&rv=SEBdYXxijSo&t=72)
+  - CKKS - Approximated HE
+- [[Video] More topics on HE from FHE.org meetup](https://www.youtube.com/playlist?list=PLnbmMskCVh1chnSM8Jjy6Nk3IH6fpn7MM)
 
 ### Zero Knowledge Proofs (ZKPs)
 
 - 中文說明
   - [Day15|密碼學初探(8)：零知識證明](https://ithelp.ithome.com.tw/articles/10215110)
   - [a16z：零知識證明的進步映射去中心化的速度](https://zombit.info/a16z-advances-in-zero-knowledge-proofs/)
+- [[Course] The 9th BIU Winter School on Cryptography - Zero Knowledge](https://www.youtube.com/playlist?list=PL8Vt-7cSFnw29cLUVqAIuMlg1QJ-szV0K)
+  - [[Video] Intro to Zero Knowledge](https://www.youtube.com/watch?v=6uGimDYZPMw)
+    - Completeness, Soundness, Efficiency
+  - [[Video] Sigma Protocols (part1) - Benny Pinkas](https://www.youtube.com/watch?v=XT1Pad0DM24&list=PL8Vt-7cSFnw29cLUVqAIuMlg1QJ-szV0K&index=11)
+- [(Wiki)Proof of knowledge](https://en.wikipedia.org/wiki/Proof_of_knowledge)
+  - Schnorr's protocol
+  - Sigma ($\Sigma$-) protocol
+    - three-move structure(commitment, challenge, and response)
 
 ### [Verifiable Secret Sharing (VSS)](https://en.wikipedia.org/wiki/Verifiable_secret_sharing)
 
+- [Commitment Schemes](https://www.youtube.com/watch?v=4w_b8Msxy14)
+  - Commitment Phase (c) + Reveal Phase (m, d)
+  - e.g. Pederson Commitment
+    - Perfect binding and perfect hiding can't be existed together.
+  
 - Feldman's VSS
   - based on Shamir's secret sharing scheme combined with any homomorphic encryption scheme. 
   - [A tour of Verifiable Secret Sharing schemes and Distributed Key Generation protocols.](https://medium.com/nethermind-eth/a-tour-of-verifiable-secret-sharing-schemes-and-distributed-key-generation-protocols-3c814e0d47e1)
@@ -45,7 +61,8 @@
 - [[Course] Universally Composable Security: A Tutorial (by Prof. Ran Canetti in 2016)](https://www.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE)
 - [[Video] PriSC'20 - Universal Composability is Secure Compilation](https://www.youtube.com/watch?v=rpZTL9fxwfw)
 - [[Video] A Framework for Universally Composable Diffie-Hellman Key Exchange](https://www.youtube.com/watch?v=hxNYnaJQsyM)
-
+  - Provide the basic concept of UC
+  
 ### Multi-Signature (MultiSeq)
 
 - [什麼是多重簽名錢包？](https://academy.binance.com/zt/articles/what-is-a-multisig-wallet)
@@ -70,8 +87,8 @@
     - Joint-Pedersen's DKG
 
 ### Theshold Schnorr Signature
-
-`<TBD>`
+- [Schnorr signature](https://www.youtube.com/watch?v=r9hJiDrtukI)
+  - Fiat-Shamir Transform： the hash function
 
 ### InterPlanetary File System (IPFS)
 

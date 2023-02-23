@@ -13,6 +13,17 @@
 
 - 古典密碼學和現代密碼學最大的區別就是在有柯克霍夫原則後才開始有了變化，柯克霍夫原則（Kerckhoffs’ principle），大致上就是在強調即使密碼系統的任何細節被人知道了，只要密鑰（key）未洩漏，它也是安全的。換句話說，加密技術就算演算法被知道了，資料也不會有危險。
 
+### DSA (Digital Signature Algorithm)
+
+- [RSA/DSA/ESIGN的基本觀念介紹](http://security.nknu.edu.tw/textbook/chap5.pdf)
+![dsa_keygen](/img/dsa_keygen.png)
+- [簡單公式](https://dreamisadream97.pixnet.net/blog/post/282813180-dsa-%28digital-signature-algorithm%29)
+![dsa](/img/dsa.png)
+  - [重要定理：Fermat's Little Theorem](https://www.youtube.com/watch?v=3Cb0ys-jppU&list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII&index=42)
+- Tutorials
+  - [[Video]Digital Signature Algorithm (DSA) - Cryptography - Practical TLS](https://www.youtube.com/watch?v=iS1nK4G6EtA)
+  - [[Video]RSA and DSA Encryption Algorithms Explained（Simplilearn](https://www.youtube.com/watch?v=bO4lEQfPn60)
+
 ### EdDSA (愛德華茲曲線數字簽名算法）
 
 - SA，DSA，ECDSA，EdDSA和Ed25519都用於數字簽名，但只有RSA也可以用於加密。[(ref)](https://www.cnblogs.com/librarookie/p/15389876.html)
@@ -25,19 +36,33 @@
   - spec256k1、spec256r1都屬於橢圓曲線數字簽名算法ECDSA(Elliptic Curve Digital Signature Algorithm)簽名的具體實現，只是橢圓曲線函數不同。是由NIST(National Institute of Standards and Technology)這個組織確定的。
   - ed25519屬於EdDSA (Edwards-curve Digital Signature Algorithm) 簽名算法的具體實現，是由ANFS組織推進的ed25519密鑰體系相關進展。
 
-### Paillier Encryption
+### Homomorphic Encryption
+
+-[[Video]What is Homomorphic Encryption Explained | Paillier Cryptosystem | PHE | SHE | FHE](https://www.youtube.com/watch?v=7IUS-ixypos)
+  -Partially Homomorphic Encryption (PHE)
+    - only ADDITION or only MULTIPLICATION, but an infinite number of time
+  -Somewtat Homomorphic Encryption (SHE)
+    - both ADDITION & MULTIPLICATION, but for a limited number of times
+  -Fully Homomorphic Encryption (FHE)
+    - both ADDITION & MULTIPLICATION & an infinite number of times
+  
+### Paillier Encryption (is a kind of PHE)
 
 - [Paillier_cryptosystem](https://en.wikipedia.org/wiki/Paillier_cryptosystem)
   - Choose two large prime numbers `p` and `q` randomly, `gcd(pq,(p-1)(q-1))=1`
   - Compute `n = pq` and $\lambda$`=lcm(p-1,q-1)`
 - Encryption
-  - Let `m` be a message to be encrypted where `0<= m<n`
+  - Let `m` be a message to be encrypted where `0<=m<n`
   - Select random `r` where `0<r<n`
   - Compute ciphertext as: c = g^m.r^n mod n^2
 - Homomorphic properties[[ref]](https://en.wikipedia.org/wiki/Paillier_cryptosystem#Homomorphic_properties)
   - A notable feature of the Paillier cryptosystem is its homomorphic properties along with its non-deterministic encryption (see Electronic voting in Applications for usage). As the encryption function is additively homomorphic, the following identities can be described :
     - Homomorphic addition of plaintexts
     - Homomorphic multiplication of plaintexts
+- [[Video]Implementation of Homomorphic Encryption: Paillier](https://www.youtube.com/watch?v=xHjhQZdP2aU)
+  - Tutorial and implementation by Python
+- [[Video]Paillier's cryptosystem - Addtive homomorphic encryption](https://www.youtube.com/watch?v=bhebAMgRZMs)
+  - Tutorial and details
 
 ### Decisional Diffie–Hellman (DDH)
 
@@ -61,6 +86,15 @@
 - [ZeroPass](https://zeropass.io/)
   - [ZeroPass Whitepaper](https://zeropass.gitbook.io/whitepaper/)
 
+### Schnorr Digital Signature
+
+-[wiki](https://cryptography.fandom.com/wiki/Schnorr_signature)
+-[[Video]Schnorr Digital Signature](https://www.youtube.com/watch?v=mV9hXEFUB6A)
+
+### Strong RSA Assumption
+
+- [[Video Tutorial]RSA Signatures](https://www.youtube.com/watch?v=rz78hRliZDA)
+  
 ### Semantic Security
 
 對於相同的明文稱作 x，則今天用同態加密方法 En去加密他，也就是得到 En(x)。對同樣的 x 和相同的 En計算 En(x) 100 次，你會發現這一百次出來的結果都不一樣。但是呢，你將這一百個值做解密，會發現給出的答案都是 10。( for 同態加密(homomorphic encryption))
@@ -126,6 +160,7 @@
   - [ECC (Elliptic Curve Cryptography;橢圓曲線密碼學)](https://ithelp.ithome.com.tw/articles/10268495)
     - [Day 24. 非對稱式加密演算法 - 橢圓曲線密碼學 Elliptic Curve Cryptography , ECC (觀念篇)](https://ithelp.ithome.com.tw/articles/10251031)
   - [DHKE、ECDH、ElGamal](https://ithelp.ithome.com.tw/articles/10271893)
+    - [[Sunny Classroom]Intro to the ElGamal Cryptosystem](https://www.youtube.com/watch?v=oQqr8d5s3Uk)
   - [ECDSA](https://ithelp.ithome.com.tw/articles/10275773)
   - [地址 Address](https://ithelp.ithome.com.tw/articles/10279688)
 
@@ -183,6 +218,9 @@
 
 - [[Explore the Cryptography World]](https://www.youtube.com/playlist?list=PL-qvsLbZq06LvdO6L7byZfcigeQAEo2k6)
 
+- [[Sunny Classroom]Advanced Cryptography](https://www.youtube.com/playlist?list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7)
+  - DHKE, PKI, RSA, [ELGamal](https://www.youtube.com/watch?v=oQqr8d5s3Uk&list=PLSNNzog5eydtwsdT__t5WtRgvpfMzpTc7&index=12)
+  
 - [[Video]RSA 歷史原由與設計說明](https://www.youtube.com/watch?v=wXB-V_Keiu8)
 
 - [[華人開放式課程 MOOC]区块链中的密码学](https://www.youtube.com/watch?v=uGenWpoFDG0&list=PLv8hyYaXsdish--YdAtaFXnDDsYMBQJXz)
@@ -212,3 +250,11 @@ Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教�
 
 - refer to [video](https://www.youtube.com/watch?v=FshMisRD2Uo&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=86)
 - Bitcoin 採用 [Secp256k1](https://en.bitcoin.it/wiki/Secp256k1)
+
+---
+
+## Resource
+
+- Cryptography suite
+  - https://asecuritysite.com/
+  - 

@@ -6,6 +6,9 @@
 
 - [GG18] Fast Multiparty Threshold ECDSA with Fast Trustless Setup
   - [Paper](https://eprint.iacr.org/2019/114.pdf)
+    - Revised
+      - ZK range proofs
+        - [2021 - Alpha-Rays: Key Extraction Attacks on Threshold ECDSA Implementations](https://eprint.iacr.org/2021/1621.pdf)
   - [Source code from Binance](https://github.com/bnb-chain/tss-lib)]
   - [[Video]ACM CSS 2018](https://www.youtube.com/watch?v=PdfDZIwuZm0)
   
@@ -19,10 +22,13 @@
   ![Performance Comparison](/img/gg21_fig1.png)
 
   - [Source code]
+    - [[Rust] Webb - CGGMP Threshold ECDSA Distributed Key Generation Protocol](https://github.com/webb-tools/cggmp-threshold-ecdsa)
+      - Implementing all ZKPs for 4-round (O(n^2)) identifiable abort
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
+    - [[Short Video]Introduction on the main concept of GG21](https://www.youtube.com/watch?v=tNptKxswmvg)
   
-  [![Technical Overview (Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/sddefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
+  [![Technical Overview from Fireblocks(Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/sddefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
   *Technical Overview (Must Read)*
   
   - Preliminaries
@@ -32,6 +38,13 @@
     - Pedersen Commitments
     - DDH
 
+### Techical Note
+
+- [(Medium)On UC Non-interactive, Proactive, Threshold ECDSA](https://medium.com/iovlabs-innovation-stories/on-uc-non-interactive-proactive-threshold-ecdsa-fda5916edc50)
+ ![Rounds Comparison](/img/ts-comparison.png)
+- [(Coinbase)Threshold Digital Signatures](https://www.coinbase.com/blog/threshold-digital-signatures)
+  - Deeper dive into threshold signatures
+  
 ### Other Publications
 
 - [2022 Better than Advertised Security for Non-interactive Threshold Signatures](https://crypto.iacr.org/2022/papers/538806_1_En_18_Chapter_OnlinePDF.pdf)
@@ -67,7 +80,8 @@
 - [Advanced Concept of Cryptograph](advanced.md)
 
 ### Multi Party Computation (MPC)
-
+- [[Video]Multiparty Computation](https://www.youtube.com/watch?v=_kLET4k2xBQ)
+  - the best explanation video
 - [[Video]Basic Concept of MPC](https://www.youtube.com/watch?v=vRVudJADQLk) [Refer to [Slide](https://drive.google.com/file/d/1U5M8b4dePgEgiY4PPeP3DL0LB_kaS34S/view)]
 - [[2020Cryptography Meetup] A crash course on Secure Multiparty Computation (MPC)](https://www.youtube.com/watch?v=HOqv5xzrlFI)
   - Privacy Guarantees:
