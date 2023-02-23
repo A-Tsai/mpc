@@ -25,6 +25,11 @@
 
 ### Zero Knowledge Proofs (ZKPs)
 
+- [ZKDocs](https://www.zkdocs.com/)
+  - [Notation(慣用數學符號的定義)](https://www.zkdocs.com/docs/zkdocs/notation/)
+  - ZK Protocols
+    - Schnorr's Identification protocol
+    - Girault's Identification protocol
 - 中文說明
   - [Day15|密碼學初探(8)：零知識證明](https://ithelp.ithome.com.tw/articles/10215110)
   - [a16z：零知識證明的進步映射去中心化的速度](https://zombit.info/a16z-advances-in-zero-knowledge-proofs/)
