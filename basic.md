@@ -256,5 +256,5 @@ Ref: [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教�
 ## Resource
 
 - Cryptography suite
-  - https://asecuritysite.com/
-  - 
+  - [A Security Suite](https://asecuritysite.com/)
+  
