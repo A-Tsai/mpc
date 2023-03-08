@@ -13,6 +13,14 @@
 
 - 古典密碼學和現代密碼學最大的區別就是在有柯克霍夫原則後才開始有了變化，柯克霍夫原則（Kerckhoffs’ principle），大致上就是在強調即使密碼系統的任何細節被人知道了，只要密鑰（key）未洩漏，它也是安全的。換句話說，加密技術就算演算法被知道了，資料也不會有危險。
 
+### Elliptic Curve Cryptography
+
+- [(Video)Elliptic Curve Diffie Hellman](https://www.youtube.com/watch?v=F3zzNa42-tQ)
+  - [(Video)Elliptic Curve Point Addition](https://www.youtube.com/watch?v=XmygBPb7DPM)
+  - *** [(Course) What is ... an elliptic curve?](https://www.youtube.com/watch?v=A2KNrgiWquU&list=PLYpVTXjEi1oe1OeAllJpNhFoI4B7Ws8Yl) ***
+- [(Video)Elliptic Curve Cryptography Overview](https://www.youtube.com/watch?v=dCvB-mhkT0w&list=RDLViFY5SyY3IMQ&index=6)
+- [(Video)Elliptic Curves - Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE&list=RDLViFY5SyY3IMQ&index=26)
+
 ### DSA (Digital Signature Algorithm)
 
 - [RSA/DSA/ESIGN的基本觀念介紹](http://security.nknu.edu.tw/textbook/chap5.pdf)

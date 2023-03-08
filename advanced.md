@@ -44,13 +44,17 @@
 
 ### [Verifiable Secret Sharing (VSS)](https://en.wikipedia.org/wiki/Verifiable_secret_sharing)
 
+- [Shamir Secret Sharing assumes all parties are honest, so it will be broken easily by any malicious party. That's why we need VSS.](https://zhuanlan.zhihu.com/p/149071853)
+  - ZKP (interactive) : ???
+  - PKI + HE (uninteractive) : Feldman's VSS
 - [Commitment Schemes](https://www.youtube.com/watch?v=4w_b8Msxy14)
   - Commitment Phase (c) + Reveal Phase (m, d)
   - e.g. Pederson Commitment
     - Perfect binding and perfect hiding can't be existed together.
   
 - Feldman's VSS
-  - based on Shamir's secret sharing scheme combined with any homomorphic encryption scheme. 
+  - based on Shamir's secret sharing scheme combined with any homomorphic encryption scheme.
+  - [可以扺抗 (n-1)/2 malicious parties](https://zhuanlan.zhihu.com/p/149071853)
   - [A tour of Verifiable Secret Sharing schemes and Distributed Key Generation protocols.](https://medium.com/nethermind-eth/a-tour-of-verifiable-secret-sharing-schemes-and-distributed-key-generation-protocols-3c814e0d47e1)
   
 ### Universally Composable (UC) Security Framework

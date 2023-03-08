@@ -137,3 +137,5 @@
 ## Reference
 
 - [MPC Alliance](https://www.mpcalliance.org/)
+- [Key Length Comparison](https://www.keylength.com/en/compare/)
+  - Provide a mapping table for many standards, e.g. NIST, BSI.
