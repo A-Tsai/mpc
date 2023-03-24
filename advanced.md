@@ -7,6 +7,7 @@
 - [[Video] Elliptic Curve Cryptography橢圓曲線密碼簡介(鄧安文教授)](https://www.youtube.com/watch?v=3FUyGjH_FZ0&list=PLYRlUBnWnd5JdDFEGi4VO8gZyAQfX9P4I&index=3)
 - [[Video] Elliptic Curve Cryptography Overview](https://www.youtube.com/watch?v=dCvB-mhkT0w)
 - [[Video] Elliptic Curves - Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE)
+- [Elliptic Curve Cryptography: finite fields and discrete logarithms](https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/)
 
 ### Homomorphic Encryption (同態加密)
 
@@ -41,21 +42,29 @@
   - Schnorr's protocol
   - Sigma ($\Sigma$-) protocol
     - three-move structure(commitment, challenge, and response)
+- Range Proof
+  - Bulletproofs 基本說明 [I](https://www.8btc.com/article/530155), [II](https://www.8btc.com/media/532874), [III](https://zhuanlan.zhihu.com/p/97676457)
+    - https://github.com/dalek-cryptography/bulletproofs
+    - [(paper) 2017 Bulletproofs: Short Proofs for Confidential Transactions and More](https://web.stanford.edu/~buenz/pubs/bulletproofs.pdf)
 
 ### [Verifiable Secret Sharing (VSS)](https://en.wikipedia.org/wiki/Verifiable_secret_sharing)
 
 - [Shamir Secret Sharing assumes all parties are honest, so it will be broken easily by any malicious party. That's why we need VSS.](https://zhuanlan.zhihu.com/p/149071853)
   - ZKP (interactive) : ???
   - PKI + HE (uninteractive) : Feldman's VSS
-- [Commitment Schemes](https://www.youtube.com/watch?v=4w_b8Msxy14)
+- [(Video) Concept of Commitment Schemes](https://www.youtube.com/watch?v=4w_b8Msxy14)
   - Commitment Phase (c) + Reveal Phase (m, d)
+  - Perfect binding and perfect hiding can't be existed together.
   - e.g. Pederson Commitment
-    - Perfect binding and perfect hiding can't be existed together.
+    - Computationally binding + perfectly hiding
   
 - Feldman's VSS
   - based on Shamir's secret sharing scheme combined with any homomorphic encryption scheme.
+  - [(Video)Threshold Secret Sharing part 2- Verifiable Secret Sharing - Gilad Asharov](https://youtu.be/Qm4EgaNDLK4?t=1781)
   - [可以扺抗 (n-1)/2 malicious parties](https://zhuanlan.zhihu.com/p/149071853)
   - [A tour of Verifiable Secret Sharing schemes and Distributed Key Generation protocols.](https://medium.com/nethermind-eth/a-tour-of-verifiable-secret-sharing-schemes-and-distributed-key-generation-protocols-3c814e0d47e1)
+  - [(GitHub: Rust Code) VSS from bitrocks](https://github.com/bitrocks/verifiable-secret-sharing)
+- [Pedersen Verfifiable Secret Sharing](https://medium.com/asecuritysite-when-bob-met-alice/pedersen-verifiable-secret-shares-pvss-commitments-and-spotting-a-bad-dealer-a54364d24d6f)
   
 ### Universally Composable (UC) Security Framework
 
@@ -96,6 +105,7 @@
     - Joint-Pedersen's DKG
 
 ### Theshold Schnorr Signature
+
 - [Schnorr signature](https://www.youtube.com/watch?v=r9hJiDrtukI)
   - Fiat-Shamir Transform： the hash function
 
@@ -103,3 +113,19 @@
 
 - [[Paper]IPFS - Content Addressed, Versioned, P2P File System](https://arxiv.org/abs/1407.3561)
 - [[Video]李查说IPFS：彻底搞懂 IPFS 白皮书](https://www.youtube.com/watch?v=cIJVg19RSsQ)
+
+## Comparison
+
+### Signature Scheme
+
+- [區塊鏈替代簽名方案優劣勢對比，Schnorr簽名最適合比特幣](https://www.8btc.com/article/359451)
+  - SSS
+  - Threshold ECDSA
+  - Threshold EdDSA
+  - Schnorr Signature Scheme
+  - BLS Signature Scheme
+    - 可以節省存儲空間和傳輸帶寬，因為多個簽名和密鑰可以合併成一個。
+    - 可以提高系統的安全性，因為聚合簽名和聚合密鑰的驗證不依賴於單個簽名者或密鑰持有者。
+    - 可以實現多重交易和閾值簽名，方便使用者管理自己的資產。
+
+![Comparison on Signature Scheme](/img/signature_scheme_comparison.png)

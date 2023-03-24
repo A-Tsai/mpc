@@ -33,3 +33,7 @@
 - [幣學](https://glossary.bshare.io/)
 - [BitNodes](https://bitnodes.io/)
   - [Live-Map](https://bitnodes.io/nodes/live-map/)
+- [BitAddress 自動產生金鑰](https://www.bitaddress.org/)
+  - https://github.com/pointbiz/bitaddress.org
+  - 比特幣、萊特比、狗狗幣等加密貨幣，可以使用：[Wallet Generator](https://walletgenerator.net/)
+  - 以太坊或ERC20等加密貨幣，可以使用：[My Ethereum Wallet](https://www.myetherwallet.com/)

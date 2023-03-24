@@ -8,26 +8,48 @@
   - [Paper](https://eprint.iacr.org/2019/114.pdf)
     - Revised
       - ZK range proofs
-        - [2021 - Alpha-Rays: Key Extraction Attacks on Threshold ECDSA Implementations](https://eprint.iacr.org/2021/1621.pdf)
-  - [Source code from Binance](https://github.com/bnb-chain/tss-lib)]
+    - [中文實例說明(看懂這篇就全懂了，厲害👍)](http://aandds.com/blog/multiparty-threshold-ecdsa.html)
+  - Source Code
+    - [Golang code from Binance](https://github.com/bnb-chain/tss-lib)]
   - [[Video]ACM CSS 2018](https://www.youtube.com/watch?v=PdfDZIwuZm0)
-  
+  - Known Attacks on GG18
+    - [2021 Alpha-Ray: Key Extraction Attacks on Threshold ECDSA Implementations](https://eprint.iacr.org/2021/1621.pdf)
+      - [(HackMD)'Alpha-Rays' behind the scenes](https://hackmd.io/@omershlo/Sk_8JT-qt)
+      - [(Fireblocks) A Note on the Security of GG18](https://info.fireblocks.com/hubfs/A_Note_on_the_Security_of_GG.pdf)
+      - [Reply from Cybavo](https://www.cybavo.com/blog/cybavo-mpc-safe-against-key-extraction-attacks-paper/)
+      - [(Reply from SFAEHERON)Finding from iString Lab](https://blog.safeheron.com/blog/insights/safeheron-originals/warning-gg18-20-based-attack-towards-mpc-threshold-signature)
+    - [2020 (ZenGo X) Attacking Threshold Wallets](https://eprint.iacr.org/2020/1052.pdf)
+      - [(Video)Multiple Bugs in MPC: Breaking Cryptocurrency's Strongest Wallets](https://www.youtube.com/watch?v=0Okqvm4lBQI)
+        - [Slide](https://www.aumasson.jp/data/talks/BH20_mpctss.pdf)
+      - [Slide 20](https://www.aumasson.jp/data/talks/tss_mpts20.pdf)
+      - [Slide 21](https://www.aumasson.jp/data/talks/tss_rwc21.pdf)
+      - [(Velas)Counter-Strike: Threshold Attack](https://medium.com/velasblockchain/counter-strike-threshold-attack-87f3b456b1e0)
+      - [Pull Request for Golden Shoe Attack from Binance](https://github.com/bnb-chain/tss-lib/pull/89)
+      - [PR for disable without range proofs from ING-bank](https://github.com/ing-bank/threshold-signatures/pull/32/files)
+      - [CVE-2020-12118](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12118))
+
 - [GG20] One Round Threshold ECDSA with Identifiable Abort
   - [Paper](https://eprint.iacr.org/2020/540.pdf)
   - [Source code from Coinbase](https://github.com/coinbase/kryptology)]
+  - Known Attacks on GG20
+    - [2021 Alpha-Ray: Key Extraction Attacks on Threshold ECDSA Implementations](https://eprint.iacr.org/2021/1621.pdf)
+      - [Pull Request from Coinbase](https://github.com/coinbase/kryptology/pull/16/files)
 
 - [GG21] UC Non-Interactive, Proactive, Threshold ECDSA with Identifiable Aborts
   - [Paper](https://eprint.iacr.org/2021/060.pdf)
+  - [Announcement from Taurus](https://blog.taurushq.com/first-open-source-implementation-of-mpc-cmp/)
 
   ![Performance Comparison](/img/gg21_fig1.png)
 
   - [Source code]
+    - [(Taurus Group)Implementation](https://github.com/taurusgroup/multi-party-sig)
     - [[Rust] Webb - CGGMP Threshold ECDSA Distributed Key Generation Protocol](https://github.com/webb-tools/cggmp-threshold-ecdsa)
       - Implementing all ZKPs for 4-round (O(n^2)) identifiable abort
   - [[Video] Short Concept Introduction](https://dl.acm.org/doi/10.1145/3372297.3423367#)
   - [Introduction from Fireblocks](https://www.fireblocks.com/blog/ccs-threshold-ecdsa/)
     - [[Short Video]Introduction on the main concept of GG21](https://www.youtube.com/watch?v=tNptKxswmvg)
-  
+  - [Presentation in NIST](https://csrc.nist.gov/presentations/2020/mpts2020-3a3)
+    - [(video)](https://www.nist.gov/video/mpts-2020-talk-3a3-uc-non-interactive-proactive-threshold-ecdsa-identifiable-aborts)
   [![Technical Overview from Fireblocks(Must Read)](https://img.youtube.com/vi/zXCSPWxWA-s/sddefault.jpg)](https://www.youtube.com/watch?v=zXCSPWxWA-s)
   *Technical Overview (Must Read)*
   
@@ -40,6 +62,7 @@
 
 ### Techical Note
 
+- [Wallet Infrastructure Comparisons](https://hackmd.io/@torus/ryzootvn5)
 - [(Medium)On UC Non-interactive, Proactive, Threshold ECDSA](https://medium.com/iovlabs-innovation-stories/on-uc-non-interactive-proactive-threshold-ecdsa-fda5916edc50)
  ![Rounds Comparison](/img/ts-comparison.png)
 - [(Coinbase)Threshold Digital Signatures](https://www.coinbase.com/blog/threshold-digital-signatures)
@@ -47,6 +70,8 @@
   
 ### Other Publications
 
+- [2021 Refresh When You Wake Up: Proactive Threshold Wallets with Offline Devices](https://eprint.iacr.org/2019/1328.pdf)
+  - https://www.omershlomovits.com/blog/entry-03-4yatg
 - [2022 Better than Advertised Security for Non-interactive Threshold Signatures](https://crypto.iacr.org/2022/papers/538806_1_En_18_Chapter_OnlinePDF.pdf)
   - [Source Code(Python)](https://github.com/mmaller/multi_and_threshold_signature_reductions)
 - [2022 Low-Bandwidth Threshold ECDSA via Pseudorandom Correlation Generators](https://eprint.iacr.org/2021/1587.pdf)
@@ -67,10 +92,13 @@
 - [[Github] Multi-party ECDSA](https://github.com/ZenGo-X/multi-party-ecdsa)
   - including GG20
   - implemented by Rust
+  - Using Signal Messager (P2P network) to replace broadcast channel
   - [[Github] TSS ECDSA CLI utility](https://github.com/cryptochill/tss-ecdsa-cli)
-- [[Github] Multiparty threshold ECDSA scheme](https://github.com/ing-bank/threshold-signatures)
+- [[Github] Multiparty threshold ECDSA scheme by ING bank](https://github.com/ing-bank/threshold-signatures)
   - based on GG18
   - implmeneted by Rust
+  - P2P or Broadcast ???
+  - [Audit Report by Kudelski Security](https://github.com/ing-bank/threshold-signatures/blob/master/docs/report_ing_tss_1.0.pdf)
   
 ---
 
@@ -80,6 +108,7 @@
 - [Advanced Concept of Cryptograph](advanced.md)
 
 ### Multi Party Computation (MPC)
+
 - [[Video]Multiparty Computation](https://www.youtube.com/watch?v=_kLET4k2xBQ)
   - the best explanation video
 - [[Video]Basic Concept of MPC](https://www.youtube.com/watch?v=vRVudJADQLk) [Refer to [Slide](https://drive.google.com/file/d/1U5M8b4dePgEgiY4PPeP3DL0LB_kaS34S/view)]
