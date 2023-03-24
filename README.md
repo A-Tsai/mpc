@@ -71,7 +71,7 @@
 ### Other Publications
 
 - [2021 Refresh When You Wake Up: Proactive Threshold Wallets with Offline Devices](https://eprint.iacr.org/2019/1328.pdf)
-  - https://www.omershlomovits.com/blog/entry-03-4yatg
+  - [Blog Article](https://www.omershlomovits.com/blog/entry-03-4yatg)
 - [2022 Better than Advertised Security for Non-interactive Threshold Signatures](https://crypto.iacr.org/2022/papers/538806_1_En_18_Chapter_OnlinePDF.pdf)
   - [Source Code(Python)](https://github.com/mmaller/multi_and_threshold_signature_reductions)
 - [2022 Low-Bandwidth Threshold ECDSA via Pseudorandom Correlation Generators](https://eprint.iacr.org/2021/1587.pdf)
