@@ -2,6 +2,7 @@
 
 ## Preliminaries
 
+- [Math](math.md)
 - Cryptography
   - [Basic](basic.md)
   - [Advanced](advanced.md)
