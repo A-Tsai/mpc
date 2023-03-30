@@ -107,6 +107,10 @@
 
 對於相同的明文稱作 x，則今天用同態加密方法 En去加密他，也就是得到 En(x)。對同樣的 x 和相同的 En計算 En(x) 100 次，你會發現這一百次出來的結果都不一樣。但是呢，你將這一百個值做解密，會發現給出的答案都是 10。( for 同態加密(homomorphic encryption))
 
+### Fiat-Shamir Heuristic(Transform/Paradigm)
+
+- [Fiat–Shamir啟發式 非互動式零知識證明](https://zhuanlan.zhihu.com/p/95921725)
+  
 ### Bitcoin Improvement Proposal (BIP)
 
 - [BIPs](https://github.com/bitcoin/bips)

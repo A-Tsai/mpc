@@ -117,8 +117,18 @@
 
 ### Multi Party Computation (MPC)
 
-- [[Video]Multiparty Computation](https://www.youtube.com/watch?v=_kLET4k2xBQ)
+- [History of MPC](https://cointelegraphcn.com/news/multi-party-computation)
+  - created by Andrew Yao in 1980's
+  - Yao's millionaires' problem
+  - 
+- [[Video]Multiparty Computation in 5 mins](https://www.youtube.com/watch?v=_kLET4k2xBQ)
   - the best explanation video
+  - XOR for multiple keys
+  - Threshold Secret Sharing
+    - Polynorminal interpolation
+  - Average Salary
+- [[Video]Introduction to MPC in 6 mins](https://www.youtube.com/watch?v=90jcXCHsBF0)
+  - Average Salary
 - [[Video]Basic Concept of MPC](https://www.youtube.com/watch?v=vRVudJADQLk) [Refer to [Slide](https://drive.google.com/file/d/1U5M8b4dePgEgiY4PPeP3DL0LB_kaS34S/view)]
 - [[2020Cryptography Meetup] A crash course on Secure Multiparty Computation (MPC)](https://www.youtube.com/watch?v=HOqv5xzrlFI)
   - Privacy Guarantees:
@@ -136,7 +146,8 @@
     - [A Good Example with code](https://www.geeksforgeeks.org/shamirs-secret-sharing-algorithm-cryptography/)
     - [中文範例 with code](https://medium.com/taipei-ethereum-meetup/%E7%A7%81%E9%91%B0%E5%88%86%E5%89%B2-shamirs-secret-sharing-7a70c8abf664)
     - [An Interactive Emulator](https://iancoleman.io/shamir/)
-
+- [[Video] Threshold Signature Scheme(TSS) by Axelar Network](https://www.youtube.com/watch?v=p2vjRjTtjcI)
+  - Good tutorial from very basic knowledge to TSS
 - [[Video] Introduction to Multiparty Computation (by Yehuda Lindell)](https://www.youtube.com/watch?v=aDL_KScy6hA)
   - Secure Multiparty Computation (e.g. Salary Average)
   - Yao's Garbled Circuits

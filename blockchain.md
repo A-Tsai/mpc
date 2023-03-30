@@ -5,6 +5,8 @@
 - [[Paper]Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
   - [Bitcoin 論文中文詳細解說](https://www.youtube.com/watch?v=Sfdv_Day2Do)
     - Merkle Tree
+- [[Video]Delegated Proof of Stake](https://www.youtube.com/watch?v=p2vjRjTtjcI)
+  - PoW, PoS, DPoS
 
 ## Services
 
