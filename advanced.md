@@ -31,6 +31,10 @@
   - ZK Protocols
     - Schnorr's Identification protocol
     - Girault's Identification protocol
+- [CO6GC: Introduction to Zero-Knowledge Proofs](https://www.esat.kuleuven.be/cosic/blog/co6gc-introduction-to-zero-knowledge-proofs-1/)
+  - Completeness
+  - Soundness
+  - Special-Soundness (or Knowledge-Soundness)
 - 中文說明
   - [Day15|密碼學初探(8)：零知識證明](https://ithelp.ithome.com.tw/articles/10215110)
   - [a16z：零知識證明的進步映射去中心化的速度](https://zombit.info/a16z-advances-in-zero-knowledge-proofs/)
